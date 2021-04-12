@@ -2,7 +2,8 @@
 
 version: "3"
 output: prefixed
-silent: true
+silent: false
+dotenv: ['.env']
 
 env:
 
@@ -13,9 +14,18 @@ tasks:
     cmds:
       - echo "tf devops"
 
-  tfdoc:
+  tf-doc:
     desc: terraform-docs - A utility to generate documentation from Terraform modules in various output formats
     dir: .
     cmds:
       - terraform-docs markdown . --output-file README.md
 
+  tf-test:
+    desc: terraform ops
+    dir: examples/basic
+    cmds:
+      - terraform init
+      - terraform fmt
+      - terraform validate
+      - tflint .
+      - terraform plan
