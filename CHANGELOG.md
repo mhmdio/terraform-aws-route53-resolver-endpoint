@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2021-04-12
+
+### Added
+
+- `ip_addresses` output
+
 ## [1.1.0] - 2021-04-12
 
 ### Changed
