@@ -30,8 +30,6 @@ module "basic" {
     subnet_id = "subnet-12345678901234567"
     },
     {
-      ip        = null
-      ip_id     = null
       subnet_id = "subnet-12345678907654321"
     },
   ]

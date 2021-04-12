@@ -7,12 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-04-12
+
+### Changed
+
+- Experimental: Optional Object Type Attributes by [@mhmdio](https://github.com/mhmdio).
+
 ## [1.0.0] - 2021-04-12
 
 ### Added
 
 - initial commit by [@mhmdio](https://github.com/mhmdio).
-
-### Changed
-
-### Removed
