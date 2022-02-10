@@ -41,9 +41,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_arn"></a> [arn](#output\_arn) | returns a string |
-| <a name="output_host_vpc_id"></a> [host\_vpc\_id](#output\_host\_vpc\_id) | returns a string |
-| <a name="output_id"></a> [id](#output\_id) | returns a string |
-| <a name="output_ip_addresses"></a> [ip\_addresses](#output\_ip\_addresses) | returns a list - Resolver IP addresses |
-| <a name="output_this"></a> [this](#output\_this) | n/a |
+| <a name="output_arn"></a> [arn](#output\_arn) | The ARN of the Route 53 Resolver endpoint. |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the Route 53 Resolver endpoint. |
+| <a name="output_ip_addresses"></a> [ip\_addresses](#output\_ip\_addresses) | IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints) |
 <!-- END_TF_DOCS -->
