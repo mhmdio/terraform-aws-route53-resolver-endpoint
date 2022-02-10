@@ -24,8 +24,7 @@ tasks:
     desc: terraform ops
     dir: examples/basic
     cmds:
-      - terraform init
+      - terraform init -upgrade
       - terraform fmt
       - terraform validate
-      - tflint .
       - terraform plan

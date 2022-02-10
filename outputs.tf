@@ -1,23 +1,14 @@
 output "arn" {
-  description = "returns a string"
+  description = "The ARN of the Route 53 Resolver endpoint."
   value       = aws_route53_resolver_endpoint.this.arn
 }
 
-output "host_vpc_id" {
-  description = "returns a string"
-  value       = aws_route53_resolver_endpoint.this.host_vpc_id
-}
-
 output "id" {
-  description = "returns a string"
+  description = "The ID of the Route 53 Resolver endpoint."
   value       = aws_route53_resolver_endpoint.this.id
 }
 
 output "ip_addresses" {
-  description = "returns a list - Resolver IP addresses"
+  description = "IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints)"
   value       = [for obj in aws_route53_resolver_endpoint.this.ip_address : obj.ip]
-}
-
-output "this" {
-  value = aws_route53_resolver_endpoint.this
 }

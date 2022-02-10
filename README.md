@@ -1,5 +1,7 @@
 # terraform-aws-route53-resolver-endpoint
 
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+
 Provides a Route 53 Resolver endpoint resource.
 
 <!-- BEGIN_TF_DOCS -->
@@ -7,13 +9,13 @@ Provides a Route 53 Resolver endpoint resource.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.35.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.70.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.35.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.70.0 |
 
 ## Modules
 
@@ -34,7 +36,6 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | (optional) The friendly name of the Route 53 Resolver endpoint. | `string` | `null` | no |
 | <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | (required) The ID of one or more security groups that you want to use to control access to this VPC. | `set(string)` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | (optional) A map of tags to assign to the resource. | `map(string)` | `null` | no |
-| <a name="input_timeouts"></a> [timeouts](#input\_timeouts) | nested block: NestingSingle, min items: 0, max items: 0 | <pre>set(object(<br>    {<br>      create = string<br>      delete = string<br>      update = string<br>    }<br>  ))</pre> | `[]` | no |
 
 ## Outputs
 
