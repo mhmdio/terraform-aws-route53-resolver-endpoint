@@ -1,6 +1,6 @@
 terraform {
   experiments = [module_variable_optional_attrs]
   required_providers {
-    aws = "~> 3.70.0"
+    aws = ">= 3.69.0"
   }
 }
